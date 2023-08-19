@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <>
       <h1 className="text-3xl text-center font-bold">ポートフォリオ</h1>
-      <Link href="/techBlog">Blog</Link>
+      <Link className="text-xl underline underline-offset-2" href="/techBlog">
+        Blog一覧へ →
+      </Link>
     </>
   );
 }
