@@ -1,16 +1,12 @@
-import BlogList from "@/components/TechBlog/BlogList";
+import BlogList from "@/components/BlogList";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-export default async function Home() {
-  const res = await fetch("https://zenn.dev/api/articles?username=h_ymt&order=latest");
-  const data = await res.json();
-  const posts = data.articles;
-
+export default function Home() {
   return (
     <>
-      <div className="py-12">
-        <h1 className="text-2xl font-bold">Zenn 投稿記事一覧</h1>
-        <BlogList />
-      </div>
+      <h1 className="text-3xl text-center font-bold">ポートフォリオ</h1>
+      <Link href="/techBlog">Blog</Link>
     </>
   );
 }

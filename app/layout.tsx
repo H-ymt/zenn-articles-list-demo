@@ -11,8 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="text-[#4f4f4f] bg-gradient-to-t from-[#B0B0B0] to-[#E7E7E7]">
-        <main className="w-[calc(100%-48px)]  lg:w-[calc(100%-80px)] mx-auto">{children}</main>
+      <body className="text-[#083c49] bg-gradient-to-t from-[#baf3fd] to-[#0ed1e9]">
+        <main className="w-[calc(100%-48px)]  lg:w-[calc(100%-80px)] mx-auto py-16">
+          {children}
+        </main>
       </body>
     </html>
   );
